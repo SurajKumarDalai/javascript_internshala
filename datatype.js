@@ -83,3 +83,8 @@ const fruits = {"mango", "apple", "guava"};
 // typeof
 
 console.log(typeof(a));
+
+let person = {
+    name: "Suraj",
+    age: 21
+  };
