@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1 id="title">Hello</h1>
+
+  <button id="btn">Change Text</button>
+
+  <script>
+
+    const title = document.querySelector("#title");
+
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", function () {
+
+      title.textContent = "Hello Suraj";
+
+    });
+
+  </script>
+
+</body>
+</html>
+
+
+<!-- Example (Changing HTML Content) -->
+
+<div id="box"></div>
+
+const box = document.querySelector("#box");
+
+box.innerHTML = "<h1>Hello</h1>";
+
+<!-- Now browser creates: -->
+
+<h1>Hello</h1>
+
+<!-- inside the div. -->

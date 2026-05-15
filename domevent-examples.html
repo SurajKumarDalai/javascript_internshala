@@ -1,0 +1,209 @@
+<!-- 1. Click Event ⭐ MOST IMPORTANT -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+  <button id="btn">Click Me</button>
+
+  <script>
+
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", function () {
+
+      console.log("Button Clicked");
+
+    });
+
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- 2. Change Text on Click -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1 id="title">Hello</h1>
+
+  <button id="btn">Change Text</button>
+
+  <script>
+
+    const title = document.querySelector("#title");
+
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", function () {
+
+      title.textContent = "Hello Suraj";
+
+    });
+
+  </script>
+
+</body>
+</html> -->
+
+<!-- 3. Change Background Color -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+  <button id="btn">Dark Background</button>
+
+  <script>
+
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", function () {
+
+      document.body.style.backgroundColor = "black";
+
+    });
+
+  </script>
+
+</body>
+</html> -->
+
+<!-- 4. Input Event ⭐ VERY IMPORTANT -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <input type="text" id="input">
+
+  <script>
+
+    const input = document.querySelector("#input");
+
+    input.addEventListener("input", function () {
+
+      console.log(input.value);
+
+    });
+
+  </script>
+
+</body>
+</html>
+
+
+<!-- 5. Show Input on Screen -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <input type="text" id="input">
+
+  <h1 id="output"></h1>
+
+  <script>
+
+    const input = document.querySelector("#input");
+
+    const output = document.querySelector("#output");
+
+    input.addEventListener("input", function () {
+
+      output.textContent = input.value;
+
+    });
+
+  </script>
+
+
+<!-- 6. Mouseover Event -->
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1 id="title">Hover Me</h1>
+
+  <script>
+
+    const title = document.querySelector("#title");
+
+    title.addEventListener("mouseover", function () {
+
+      title.style.color = "red";
+
+    });
+
+  </script>
+
+</body>
+</html>
+
+<!-- 7. Keydown Event -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <input type="text" id="input">
+
+  <script>
+
+    const input = document.querySelector("#input");
+
+    input.addEventListener("keydown", function () {
+
+      console.log("Key Pressed");
+
+    });
+
+  </script>
+
+</body>
+</html>
+
+
+<!-- 8. Submit Event ⭐ IMPORTANT -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <form id="form">
+
+    <button>Submit</button>
+
+  </form>
+
+  <script>
+
+    const form = document.querySelector("#form");
+
+    form.addEventListener("submit", function (event) {
+
+      event.preventDefault();
+
+      console.log("Form Submitted");
+
+    });
+
+  </script>
+
+</body>
+</html>

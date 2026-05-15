@@ -1,0 +1,171 @@
+<button id="btn">Click Me</button>
+
+<script>
+
+  const btn = document.querySelector("#btn");
+
+  btn.addEventListener("click", function () {
+
+    console.log("Button Clicked");
+
+  });
+
+</script>
+
+
+<!-- NOTES ON DOM EVENTS -->
+What are DOM Events?
+
+Events are:
+
+actions performed by the user.
+
+Examples:
+
+click
+typing
+submit
+hover
+scrolling
+
+JavaScript can “listen” to these actions.
+
+MOST IMPORTANT METHOD ⭐
+addEventListener()
+
+Used to listen for events.
+
+Structure
+element.addEventListener("event", function () {
+
+});
+Simple Meaning
+btn.addEventListener("click", function () {
+
+});
+
+means:
+
+“When button is clicked, run this function.”
+
+MOST IMPORTANT EVENT ⭐
+click
+
+Example:
+
+<button id="btn">Click Me</button>
+
+<script>
+
+  const btn = document.querySelector("#btn");
+
+  btn.addEventListener("click", function () {
+
+    console.log("Button Clicked");
+
+  });
+
+</script>
+What Happens?
+
+When button clicked:
+
+Button Clicked
+
+prints in console.
+
+Changing Text on Click ⭐
+<h1 id="title">Hello</h1>
+
+<button id="btn">Change</button>
+
+<script>
+
+  const title = document.querySelector("#title");
+
+  const btn = document.querySelector("#btn");
+
+  btn.addEventListener("click", function () {
+
+    title.textContent = "Hello Suraj";
+
+  });
+
+</script>
+Common Events
+Event	Meaning
+click	button clicked
+input	user typing
+submit	form submitted
+mouseover	mouse enters
+keydown	keyboard key pressed
+input Event ⭐ IMPORTANT
+<input type="text" id="input">
+
+<script>
+
+  const input = document.querySelector("#input");
+
+  input.addEventListener("input", function () {
+
+    console.log(input.value);
+
+  });
+
+</script>
+What Happens?
+
+Whenever user types:
+
+value prints in console
+submit Event ⭐ Basic Understanding
+<form id="form">
+
+  <button>Submit</button>
+
+</form>
+const form = document.querySelector("#form");
+
+form.addEventListener("submit", function (event) {
+
+  event.preventDefault();
+
+  console.log("Form Submitted");
+
+});
+preventDefault() ⭐
+
+Stops page refresh.
+
+Very common in forms.
+
+Event Object (Basic Only)
+function (event)
+
+event contains event information.
+
+For now only remember:
+
+event.preventDefault()
+MOST IMPORTANT DOM EVENT CONCEPTS (80/20)
+
+Focus MOST on:
+
+Topic	Priority
+addEventListener	⭐⭐⭐⭐⭐
+click event	⭐⭐⭐⭐⭐
+input event	⭐⭐⭐⭐
+submit event	⭐⭐⭐
+preventDefault	⭐⭐⭐
+Real Project Uses
+
+Events are used in:
+
+buttons
+forms
+search bars
+dark mode
+login pages
+to-do apps
+
+Events are the HEART of frontend JavaScript.
