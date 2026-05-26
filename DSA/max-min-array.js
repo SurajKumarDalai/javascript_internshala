@@ -16,15 +16,15 @@ for(let i = 0; i < numbers.length; i++){
 console.log("Maximum:", max);
 
 // Find Minimum Number
-const numbers = [10, 50, 20, 80, 5];
+const n = [10, 50, 20, 80, 5];
 
-let min = numbers[0];
+let min = n[0];
 
-for(let i = 0; i < numbers.length; i++){
+for(let i = 0; i < n.length; i++){
 
-    if(numbers[i] < min){
+    if(n[i] < min){
 
-        min = numbers[i];
+        min = n[i];
 
     }
 
@@ -33,28 +33,28 @@ for(let i = 0; i < numbers.length; i++){
 console.log("Minimum:", min);
 
 // Find BOTH Maximum and Minimum
-const numbers = [10, 50, 20, 80, 5];
+const num = [10, 50, 20, 80, 5];
 
-let max = numbers[0];
+let maximum = num[0];
 
-let min = numbers[0];
+let minimum = num[0];
 
-for(let i = 0; i < numbers.length; i++){
+for(let i = 0; i < num.length; i++){
 
-    if(numbers[i] > max){
+    if(num[i] > maximum){
 
-        max = numbers[i];
+        maximum = num[i];
 
     }
 
-    if(numbers[i] < min){
+    if(num[i] < minimum){
 
-        min = numbers[i];
+        minimum = num[i];
 
     }
 
 }
 
-console.log("Maximum:", max);
+console.log("Maximum:", maximum);
 
-console.log("Minimum:", min);
+console.log("Minimum:", minimum);
