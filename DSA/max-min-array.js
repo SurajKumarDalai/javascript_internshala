@@ -56,5 +56,4 @@ for(let i = 0; i < num.length; i++){
 }
 
 console.log("Maximum:", maximum);
-
 console.log("Minimum:", minimum);
