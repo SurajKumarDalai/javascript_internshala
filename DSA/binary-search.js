@@ -33,3 +33,41 @@ let binarySearch = function(arr, target){
 }
 
 console.log(binarySearch([10,20,30,40,50], 50));
+
+// Find Target Using Binary Search
+
+let findtarget = function(num, target){
+
+    let left = 0;
+
+    let right = num.length - 1;
+
+    while(left <= right){
+
+        let mid = Math.floor((left + right) / 2);
+
+        if(num[mid] === target){
+
+            return mid;
+
+        }
+
+        else if(num[mid] > target){
+
+            right = mid - 1;
+
+        }
+
+        else{
+
+            left = mid + 1;
+
+        }
+
+    }
+
+    return -1;
+
+}
+
+console.log(findtarget([10,20,30,40,50,60,70], 50));
