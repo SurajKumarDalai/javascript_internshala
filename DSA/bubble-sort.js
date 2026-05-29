@@ -1,8 +1,8 @@
 let bubbleSort = function(arr){
 
-    for(let i = 0; i < arr.length - 1; i++){
+    for(let i = 0; i < arr.length - 1; i++){        //i = Number of passes
 
-        for(let j = 0; j < arr.length - 1 - i; j++){
+        for(let j = 0; j < arr.length - 1 - i; j++){     // Compare neighboring elements
 
             if(arr[j] > arr[j + 1]){
 
