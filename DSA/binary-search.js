@@ -71,3 +71,44 @@ let findtarget = function(num, target){
 }
 
 console.log(findtarget([10,20,30,40,50,60,70], 50));
+
+// Count 1s in Sorted Binary Array
+
+let countOnes = function(arr){
+
+    let left = 0;
+    let right = arr.length - 1;
+
+    let firstOne = -1;
+
+    while(left <= right){
+
+        let mid = Math.floor((left + right) / 2);
+
+        if(arr[mid] === 1){
+
+            firstOne = mid;
+
+            // Search LEFT for an earlier 1
+            right = mid - 1;
+
+        }else{
+
+            // arr[mid] is 0
+            left = mid + 1;
+
+        }
+
+    }
+
+    if(firstOne === -1){
+
+        return 0;
+
+    }
+
+    return arr.length - firstOne;
+
+};
+
+console.log(countOnes([0,0,0,1,1,1,1]));
