@@ -36,7 +36,7 @@ console.log(insertionSort([5,3,4,1]));
 
 let inSort = function(nums){
 
-    for (let i = 1; i < nums.length; i++){
+    for (let i=1; i<nums.length; i++){
 
         let current = nums[i];
 
