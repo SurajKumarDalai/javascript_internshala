@@ -112,3 +112,39 @@ let countOnes = function(arr){
 };
 
 console.log(countOnes([0,0,0,1,1,1,1]));
+
+// Find Element in Sorted Array
+// [5, 10, 15, 20, 25, 30, 35]
+// Target: 25
+// Return: index of 25
+// Output
+// 4
+
+let findElements = function(number, target){
+
+    let left = 0;
+    let right = number.length - 1;
+
+    while(left <= right){
+
+        let mid = Math.floor((left + right)/2);
+
+        if(number[mid] === target){
+
+            return mid;
+        }
+        else if(number[mid]>target){
+
+            right = mid - 1;
+
+        }
+        else if(number[mid]<target){
+
+            left = mid + 1;
+
+        }
+    }
+    return -1;
+}
+
+console.log(findElements([5,10,15,20,25,30,35], 25));
