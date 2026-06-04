@@ -64,3 +64,15 @@ test(3);
 // │   └─ B 2
 // │
 // └─ B 3
+
+// Find Factorial of a Number
+function factorial(n) {
+
+    if (n === 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
