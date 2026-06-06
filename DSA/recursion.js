@@ -76,3 +76,14 @@ function factorial(n) {
 }
 
 console.log(factorial(5));
+
+// Sum of Numbers from 1 to n
+
+function sumNum(n){
+
+    if (n === 1){
+        return 1;
+    }
+    return n + sumNum(n - 1);
+}
+console.log(sumNum(5));
